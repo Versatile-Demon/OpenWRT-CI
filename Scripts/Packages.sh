@@ -124,7 +124,8 @@ if [ "$MT_MODE" = "MT5700M" ]; then
 fi
 UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
 UPDATE_PACKAGE "timecontrol" "sirpdboy/luci-app-timecontrol" "main"
-UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub gecoosac sing-box luci-app-homeproxy luci-app-timewol luci-app-wolplus luci-app-wolultra"
+# 已按要求移除 gecoosac(AC 管理) 与 luci-app-homeproxy(改用 Nikki)
+UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "axonhub sing-box luci-app-timewol luci-app-wolplus luci-app-wolultra"
 
 # ===== sing-box 过时补丁清理（2026-09-24 四机型全灭根因）=====
 # VIKINGYFY/packages 的 sing-box 自带 patches/100-fix-dns-tcp-close.patch，它是针对
